@@ -1,0 +1,21 @@
+{
+  "name": "alltcgapi-discord-bot",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Discord /price command for 19 trading card games: Cardmarket (EUR) and TCGplayer (USD) side by side, from alltcgapi.",
+  "license": "MIT",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "start": "node --env-file=.env --experimental-strip-types src/bot.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test --experimental-strip-types --disable-warning=ExperimentalWarning tests/*.test.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
